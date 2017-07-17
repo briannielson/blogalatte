@@ -15,24 +15,85 @@
   ga('create', 'UA-102510099-1', 'auto');
   ga('send', 'pageview');
 </script>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+}
+#page {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-top: 40pt;
+	padding-bottom: 40pt;
+}
+#header {
+	position: absolute;
+	height: 35pt;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #A6A6A6;
+	margin: 0;
+}
+nav {
+	padding:0 !important;
+}
+#content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 35pt 0pt;
+}
+.left {
+	width: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: green;
+}
+.right {
+	width: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: red;
+}
+footer {
+	position: absolute;
+	height: 35pt;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #A6A6A6;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+</style>
 </head>
 <body>
-	<div class="container-fluid">
-		<nav class="row">	
-			<div class="col-md-12">
+	<div id="page" class="container-fluid">
+		<div id="header" class="row">	
+			<nav class="col-md-12">
 				<ul>
-					<a href=""><li></li></a>
-					<a href=""><li></li></a>
-					<a href=""><li></li></a>
+					<a href=""><li>About</li></a>
+					<a href=""><li>Stuff</li></a>
+					<a href=""><li>Menu stuff</li></a>
 				</ul>
-			</div>
-		</nav>
-		<div class="row">
-			<div class="col-md-6"></div>
-			<div class="col-md-6"></div>
+			</nav>
+		</div>
+		<div id="content" class="row">
+			<div class="left col-md-6">BIG BUTTON 1</div>
+			<div class="right col-md-6">BIG BUTTON 2</div>
 		</div>
 		<footer class="row">
-			<div class="col-md-12"></div>
+			<div class="col-md-12">Footer goes here</div>
 		</footer>
 	</div>
 </body>
